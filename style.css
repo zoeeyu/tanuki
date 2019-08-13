@@ -1,0 +1,55 @@
+/* 整體 */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 微軟正黑體;
+}
+
+/* 導覽列 */
+#banner{
+    background-image: url(images/Banner.jpg);
+    background-size: 100vw;
+    /* 背景重複 */
+    background-repeat: no-repeat;
+    width: 100wv;
+    height: 800px;
+}
+nav{
+    width: 75%;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+}
+nav img{
+    width: 250px;
+    /* 上 右 下 左 */
+}
+#link {
+    float: right;
+    margin: 50px 0 0 0;
+}
+#link a{
+    color: white;
+    padding: 8px 20px;
+    /* 裝飾 */
+    text-decoration: none;
+    font-weight: 800;
+}
+/* 導覽列 動畫 */
+#link a:hover{
+    background:#ffd306;
+    color: black;
+    transition: 0.6s;
+}
+/* 內容 */
+#produce{
+    margin: 35% auto 0 auto;
+    color: brown;
+    width: 80%;
+    text-align: center;
+}
+#produce h3{
+    margin: 10px;
+}
+#produce p{
+
+}
