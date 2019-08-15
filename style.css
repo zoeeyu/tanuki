@@ -4,7 +4,9 @@
     margin: 0;
     font-family: 微軟正黑體;
 }
-
+body{
+    background-color: #faf7f0;
+}
 /* 導覽列 */
 #banner{
     background-image: url(images/Banner.jpg);
@@ -12,7 +14,8 @@
     /* 背景重複 */
     background-repeat: no-repeat;
     width: 100wv;
-    height: 800px;
+    /* calc計算 - 計算數字 */
+    height: calc(100vw / 2.1);
 }
 nav{
     width: 75%;
@@ -43,13 +46,20 @@ nav img{
 /* 內容 */
 #produce{
     margin: 35% auto 0 auto;
-    color: brown;
+    color: #38150a;
     width: 80%;
     text-align: center;
 }
+.title::before {
+    /*  */
+    content: "＼";
+    padding-right: 20px;
+}
+
+.title::after {
+    content: "／";
+    padding-left: 20px;
+}
 #produce h3{
     margin: 10px;
-}
-#produce p{
-
 }
