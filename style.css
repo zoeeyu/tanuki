@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;
     width: 100wv;
     /* calc計算 - 計算數字 */
-    height: calc(100vw / 2.1);
+    /* height: calc(100vw/2.1); */
 }
 nav{
     width: 75%;
@@ -43,23 +43,39 @@ nav img{
     color: black;
     transition: 0.6s;
 }
-/* 內容 */
+/* title區塊 */
 #produce{
     margin: 35% auto 0 auto;
     color: #38150a;
     width: 80%;
     text-align: center;
 }
-.title::before {
+.title-box{
+    color: #38150a;
+    text-align: center;
+}
+.title1::before {
     /*  */
     content: "＼";
     padding-right: 20px;
 }
 
-.title::after {
+.title1::after {
     content: "／";
     padding-left: 20px;
 }
-#produce h3{
-    margin: 10px;
+.title2{
+    margin-top: 10px;
+    font-size: 35px;
+    letter-spacing: 6px;
+}
+#produce p {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    /* 行與行的距離 */
+    line-height: 2;
+    /* 段落字句 */
+    letter-spacing: 3px;
+    opacity: 0.6;
 }
