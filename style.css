@@ -79,3 +79,17 @@ nav img{
     letter-spacing: 3px;
     opacity: 0.6;
 }
+
+/* 產品內容 */
+#product{
+    width: 20%;
+}
+#product img{
+    width: 100%;
+}
+#product a{
+    text-decoration: none;
+}
+#product h3{
+    color: #ffd306;
+}

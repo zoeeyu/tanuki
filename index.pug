@@ -8,10 +8,13 @@ mixin title(eng,chi)
         h1(class="title2")=chi
         img(src="images/line.png",alt="線條")
 //- cake區塊
-mixin cake(cake_name,cake_p)
-    hr
-    h3(class="cake-title")=cake_name
-    p=cake_para
+mixin product-box(img,caketitle,caketext)
+    div(class=product)
+        a(href="#")
+            img(src="images/"+ img +".png", alt="產品照片")
+            hr
+            h3=caketitle
+            p=caketext
 
 <!DOCTYPE html>
 html(lang="zh")
@@ -32,9 +35,12 @@ html(lang="zh")
                 p 不加多餘的糖份、油脂，不給不必要的色素裝飾，只有單純原味，與健康分享，不靠防腐香精來增加香氣與保存期限，使甜膩少一點、但保存短一點，讓你吃的無負擔，追求健康多一點。
                 img(src="images/index_produce.png", alt="簡介的蛋糕")
             +title("CAKES","產品介紹")
-                div(class="cake")
-                    a(href="#")
-                        img(src="images/cake01.png", alt="蛋糕 產品")
-                        +cake()
+            section(id="product")
+                +product-box("cake01","香蕉巧克力蛋糕$280","苦甜巧克力的蛋糕體配上新鮮的香蕉切片，再搭上一些鮮奶油，意想不到的搭配組合出意想不到的口感")
+                +product-box("cake02","貓咬乳酪$200","單純的以蛋、牛奶、乳酪、日本麵粉、奶油為原料組合出不簡單的口感")
+                +product-box("cake03","可可乳酪$260","苦甜巧克力拌入輕乳酪裡，呈現出來的是一加一加分效果")
+                +product-box("cake04","小路芋頭$260","日式海綿蛋糕不同於一般的戚風蛋糕，吃起來口感更順口，搭配上新鮮的芋頭內餡，吃起來更是大大的滿足")
+                +product-box("cake05","小路布丁$280","以輕乳酪為底部的蛋糕體配上滑順帶楓糖香味的布丁，二種層次，吃在嘴裡滿足在心裡")
+                +product-box("cake06","戀愛小路$280","巧克力的蛋糕體，以乳酪條作為表面的裝飾，內餡夾鮮奶油及覆盆苺的酸甜好滋味")
             +title("NEWS","最新消息")
             +title("CONTACT","聯絡我們")
